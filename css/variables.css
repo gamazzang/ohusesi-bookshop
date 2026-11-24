@@ -1,0 +1,53 @@
+/* styles/variables.css — 컬러·폰트·간격 등 디자인 토큰 (테마 수정은 여기서) */
+
+:root {
+  /* color */
+  --c-paper: #f1efe8;
+  --c-paper-deep: #e4e1d5;
+  --c-ink: #16192b;
+  --c-ink-soft: #4a4e63;
+  --c-blue: #20307a;
+  --c-blue-deep: #141f57;
+  --c-yellow: #f2d544;
+  --c-coral: #e5735a;
+  --c-line: rgba(22, 25, 43, 0.16);
+  --c-error-soft: #ffb4a2;
+
+  /* typography */
+  --ff-display: "Noto Serif KR", "Nanum Myeongjo", "Batang", Georgia, serif;
+  --ff-body: "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif;
+  --fs-xs: 0.8125rem;
+  --fs-sm: 0.9375rem;
+  --fs-base: 1rem;
+  --fs-lg: 1.125rem;
+  --fs-xl: 1.5rem;
+  --fs-2xl: clamp(1.75rem, 4.2vw, 2.75rem);
+  --fs-display: clamp(2.25rem, 6.4vw, 4.25rem);
+
+  /* spacing */
+  --sp-1: 0.25rem;
+  --sp-2: 0.5rem;
+  --sp-3: 0.75rem;
+  --sp-4: 1rem;
+  --sp-5: 1.5rem;
+  --sp-6: 2rem;
+  --sp-7: 3rem;
+  --sp-8: 5rem;
+
+  /* shape */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-pill: 999px;
+  --shadow-soft: 0 14px 30px -16px rgba(20, 31, 87, 0.45);
+
+  /* layout */
+  --container: 72rem;
+  --gutter: clamp(1rem, 4vw, 2rem);
+
+  /* z-index */
+  --z-header: 100;
+  --z-skip: 200;
+
+  /* motion */
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+}

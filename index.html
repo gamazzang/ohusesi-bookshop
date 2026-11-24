@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>오후세시 책방</title>
+    <meta
+      name="description"
+      content="오후 세 시에 문을 여는 작은 독립서점, 오후세시 책방. 매달 바뀌는 서가와 느린 오후를 만나보세요."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="오후세시 책방" />
+    <meta
+      property="og:description"
+      content="오후 세 시에 문을 여는 작은 독립서점."
+    />
+    <meta property="og:locale" content="ko_KR" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/variables.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">본문 바로가기</a>
+
+    <header class="site-header">
+      <div class="container">
+        <a class="logo" href="./" aria-label="오후세시 책방 홈">
+          오후세시 <span class="logo-sub">책방</span>
+        </a>
+
+        <nav class="gnb" aria-label="주요 메뉴">
+          <ul>
+            <li><a href="#shelf">이달의 서가</a></li>
+            <li><a href="#tips">독서 팁</a></li>
+            <li><a href="#story">책방 이야기</a></li>
+            <li><a href="#events">소식</a></li>
+            <li><a href="#visit">오시는 길</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="container">
+          <article class="hero-copy">
+            <p class="hero-eyebrow">독립서점 · 큐레이션 서가 1,200권</p>
+            <h1 class="hero-title" id="hero-title">
+              <span class="line">오후 <mark>세 시</mark>에</span>
+              <span class="line">문을 여는</span>
+              <span class="line">작은 책방</span>
+            </h1>
+            <p class="hero-lead">
+              베스트셀러보다 오래 곁에 둘 책을 고릅니다. 매달 서가의 주제가
+              바뀌고, 한 권마다 손글씨 추천 카드가 꽂혀 있어요.
+            </p>
+            <nav class="hero-actions" aria-label="바로가기">
+              <a class="btn btn-primary" href="#shelf">이달의 서가 보기</a>
+              <a class="btn btn-ghost" href="#visit">오시는 길</a>
+            </nav>
+          </article>
+
+          <figure class="shelf">
+            <ul
+              class="spines"
+              role="img"
+              aria-label="남색, 노랑, 코랄 등 서로 다른 색의 책등이 꽂힌 책장 일러스트"
+            >
+              <li class="spine" aria-hidden="true">느린 오후</li>
+              <li class="spine" aria-hidden="true">작은 방의 지도</li>
+              <li class="spine" aria-hidden="true">밑줄의 기술</li>
+              <li class="spine" aria-hidden="true">겨울 산책자</li>
+              <li class="spine" aria-hidden="true">서른 장의 편지</li>
+              <li class="spine" aria-hidden="true">빈 책상</li>
+              <li class="spine" aria-hidden="true">늦가을 산문</li>
+            </ul>
+            <figcaption class="shelf-caption">
+              <strong>11월의 서가</strong> · 늦가을에 읽는 산문
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="tips" id="tips" aria-labelledby="tips-title">
+        <div class="container">
+          <header class="tips-head">
+            <p class="tips-eyebrow">책방지기의 독서 습관</p>
+            <h2 class="tips-title" id="tips-title">
+              읽는 시간을 <mark>더 좋게</mark> 만드는 두 가지
+            </h2>
+          </header>
+
+          <div class="tips-grid">
+            <!-- TIP 01 : 책 이름으로 플레이리스트 찾기 -->
+            <article class="tip tip-music" aria-labelledby="tip-music-title">
+              <header class="tip-head">
+                <p class="tip-label">TIP 01</p>
+                <h3 class="tip-title" id="tip-music-title">
+                  읽는 책 이름으로 플레이리스트 찾기
+                </h3>
+                <p class="tip-desc">
+                  유튜브에 ‘책 + 책 이름 + 독서 플레이리스트’를 함께 검색하면 그
+                  책을 읽는 사람들의 재생목록이 나와요. 소설일수록 분위기에 딱
+                  맞는 음악이 많아요. 책 이름만 적으면 검색어는 책방이 만들어
+                  드릴게요.
+                </p>
+                <span class="vinyl" aria-hidden="true"></span>
+              </header>
+
+              <section class="book-search" aria-labelledby="search-title">
+                <h4 class="sub-title" id="search-title">지금 읽는 책 이름</h4>
+
+                <form
+                  class="search-form"
+                  id="book-search"
+                  action="https://www.youtube.com/results"
+                  method="get"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  novalidate
+                >
+                  <label class="visually-hidden" for="book-title"
+                    >책 이름</label
+                  >
+                  <input
+                    class="search-input"
+                    id="book-title"
+                    name="search_query"
+                    type="search"
+                    placeholder="예) 아몬드"
+                    maxlength="60"
+                    autocomplete="off"
+                    required
+                    aria-describedby="book-search-msg"
+                  />
+                  <button class="btn btn-accent" type="submit">
+                    플레이리스트 추천받기
+                  </button>
+                  <p class="search-msg" id="book-search-msg" role="status"></p>
+                </form>
+
+                <p class="example-label" id="example-label">
+                  이런 책으로 눌러 보세요
+                </p>
+                <ul class="example-list" aria-labelledby="example-label">
+                  <li>
+                    <button class="chip" type="button" data-book="아몬드">
+                      아몬드
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="chip"
+                      type="button"
+                      data-book="불편한 편의점"
+                    >
+                      불편한 편의점
+                    </button>
+                  </li>
+                  <li>
+                    <button class="chip" type="button" data-book="파친코">
+                      파친코
+                    </button>
+                  </li>
+                </ul>
+
+                <section
+                  class="reco is-empty"
+                  id="book-results"
+                  aria-live="polite"
+                  aria-labelledby="reco-title"
+                >
+                  <p class="reco-title" id="reco-title">
+                    책 이름을 입력하면 추천 검색 3가지를 보여드려요.
+                  </p>
+                  <ul class="reco-list"></ul>
+                </section>
+              </section>
+
+              <aside class="ranking" aria-labelledby="rank-title">
+                <h4 class="sub-title" id="rank-title">
+                  이번 주 인기 독서 플레이리스트 TOP 5
+                </h4>
+                <p class="rank-note">
+                  책방 손님들이 많이 고른 무드예요 (예시 순위)
+                </p>
+                <ol class="rank-list">
+                  <li class="rank-item">
+                    <a
+                      class="rank-link"
+                      href="https://www.youtube.com/results?search_query=%EB%B9%84%20%EC%98%A4%EB%8A%94%20%EB%82%A0%20%EC%86%8C%EC%84%A4%20%EC%9D%BD%EA%B8%B0%20%ED%94%8C%EB%A0%88%EC%9D%B4%EB%A6%AC%EC%8A%A4%ED%8A%B8&sp=EgIQAw%3D%3D"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <span class="rank-no" aria-hidden="true"></span>
+                      <span class="rank-body">
+                        <strong class="rank-name">비 오는 날 소설 읽기</strong>
+                        <span class="rank-tag">소설</span>
+                      </span>
+                      <span class="rank-bar" aria-hidden="true"></span>
+                      <span class="visually-hidden"
+                        >유튜브 검색 결과를 새 탭에서 열기</span
+                      >
+                    </a>
+                  </li>
+                  <li class="rank-item">
+                    <a
+                      class="rank-link"
+                      href="https://www.youtube.com/results?search_query=%EC%83%88%EB%B2%BD%203%EC%8B%9C%20%EC%A1%B0%EC%9A%A9%ED%95%9C%20%ED%94%BC%EC%95%84%EB%85%B8%20%ED%94%8C%EB%A0%88%EC%9D%B4%EB%A6%AC%EC%8A%A4%ED%8A%B8&sp=EgIQAw%3D%3D"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <span class="rank-no" aria-hidden="true"></span>
+                      <span class="rank-body">
+                        <strong class="rank-name"
+                          >새벽 3시 조용한 피아노</strong
+                        >
+                        <span class="rank-tag">에세이</span>
+                      </span>
+                      <span class="rank-bar" aria-hidden="true"></span>
+                      <span class="visually-hidden"
+                        >유튜브 검색 결과를 새 탭에서 열기</span
+                      >
+                    </a>
+                  </li>
+                  <li class="rank-item">
+                    <a
+                      class="rank-link"
+                      href="https://www.youtube.com/results?search_query=%EC%B9%B4%ED%8E%98%20%EC%B0%BD%EA%B0%80%20%EB%A1%9C%ED%8C%8C%EC%9D%B4%20%ED%94%8C%EB%A0%88%EC%9D%B4%EB%A6%AC%EC%8A%A4%ED%8A%B8&sp=EgIQAw%3D%3D"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <span class="rank-no" aria-hidden="true"></span>
+                      <span class="rank-body">
+                        <strong class="rank-name">카페 창가 로파이</strong>
+                        <span class="rank-tag">산문</span>
+                      </span>
+                      <span class="rank-bar" aria-hidden="true"></span>
+                      <span class="visually-hidden"
+                        >유튜브 검색 결과를 새 탭에서 열기</span
+                      >
+                    </a>
+                  </li>
+                  <li class="rank-item">
+                    <a
+                      class="rank-link"
+                      href="https://www.youtube.com/results?search_query=%EC%A7%80%ED%95%98%EC%B2%A0%20%EC%B6%9C%ED%87%B4%EA%B7%BC%20%EB%8F%85%EC%84%9C%20%ED%94%8C%EB%A0%88%EC%9D%B4%EB%A6%AC%EC%8A%A4%ED%8A%B8&sp=EgIQAw%3D%3D"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <span class="rank-no" aria-hidden="true"></span>
+                      <span class="rank-body">
+                        <strong class="rank-name">지하철 출퇴근 독서</strong>
+                        <span class="rank-tag">이동 중</span>
+                      </span>
+                      <span class="rank-bar" aria-hidden="true"></span>
+                      <span class="visually-hidden"
+                        >유튜브 검색 결과를 새 탭에서 열기</span
+                      >
+                    </a>
+                  </li>
+                  <li class="rank-item">
+                    <a
+                      class="rank-link"
+                      href="https://www.youtube.com/results?search_query=%EA%B2%A8%EC%9A%B8%EB%B0%A4%20%EC%96%B4%EC%BF%A0%EC%8A%A4%ED%8B%B1%20%EA%B8%B0%ED%83%80%20%ED%94%8C%EB%A0%88%EC%9D%B4%EB%A6%AC%EC%8A%A4%ED%8A%B8&sp=EgIQAw%3D%3D"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <span class="rank-no" aria-hidden="true"></span>
+                      <span class="rank-body">
+                        <strong class="rank-name">겨울밤 어쿠스틱 기타</strong>
+                        <span class="rank-tag">시집</span>
+                      </span>
+                      <span class="rank-bar" aria-hidden="true"></span>
+                      <span class="visually-hidden"
+                        >유튜브 검색 결과를 새 탭에서 열기</span
+                      >
+                    </a>
+                  </li>
+                </ol>
+              </aside>
+            </article>
+
+            <!-- TIP 02 : 대중교통 독서 -->
+            <article
+              class="tip tip-commute"
+              aria-labelledby="tip-commute-title"
+            >
+              <header class="tip-head">
+                <p class="tip-label">TIP 02</p>
+                <h3 class="tip-title" id="tip-commute-title">
+                  이동하는 시간엔 폰 대신 책 한 권
+                </h3>
+                <p class="tip-desc">
+                  버스와 지하철에서 보내는 시간이 길수록 책 읽기 좋은 시간이
+                  돼요. 가방에 얇은 문고판 하나만 넣어 두세요.
+                </p>
+              </header>
+
+              <ul class="tip-list">
+                <li>한 정거장에 한 문단씩만 읽어도 충분해요.</li>
+                <li>내릴 곳 알람만 켜고 폰은 가방에 넣어요.</li>
+                <li>서서 읽기 좋은 얇은 책을 골라요.</li>
+              </ul>
+
+              <figure class="route-figure">
+                <ol class="route" aria-label="이동 시간별로 읽을 수 있는 분량">
+                  <li>
+                    <span class="time">출발</span><span class="pages">0쪽</span>
+                  </li>
+                  <li>
+                    <span class="time">20분</span
+                    ><span class="pages">약 15쪽</span>
+                  </li>
+                  <li>
+                    <span class="time">45분</span
+                    ><span class="pages">약 35쪽</span>
+                  </li>
+                  <li>
+                    <span class="time">1시간</span
+                    ><span class="pages">약 50쪽</span>
+                  </li>
+                </ol>
+                <figcaption class="route-caption">
+                  평균 독서 속도로 어림한 값이에요. 사람마다 달라요.
+                </figcaption>
+              </figure>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="visit" id="visit" aria-labelledby="visit-title">
+        <div class="container">
+          <h2 id="visit-title" class="visually-hidden">영업 안내</h2>
+          <dl class="visit-list">
+            <div class="visit-item">
+              <dt>영업시간</dt>
+              <dd>화–일 15:00–22:00</dd>
+            </div>
+            <div class="visit-item">
+              <dt>휴무</dt>
+              <dd>매주 월요일</dd>
+            </div>
+            <div class="visit-item">
+              <dt>위치</dt>
+              <dd><address>서울 ○○구 책길 15, 2층</address></dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© 2026 오후세시 책방</p>
+        <p>연습용으로 만든 가상의 브랜드입니다.</p>
+      </div>
+    </footer>
+    <script src="./scripts/main.js" defer></script>
+  </body>
+</html>
